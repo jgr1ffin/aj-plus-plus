@@ -3,6 +3,11 @@
   "name": "AJ Investment Research Enhancer",
   "version": "0.1.0",
   "description": "Adds missing features to the AJ Investment Research dashboard. Feature 1: click a Ranking column header to sort the table by rank.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "aj-investment-research-enhancer@jgr1ffin"
+    }
+  },
   "content_scripts": [
     {
       "matches": ["https://consolidated.ajinvestmentresearch.com/*"],

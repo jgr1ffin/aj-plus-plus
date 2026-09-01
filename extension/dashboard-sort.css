@@ -1,0 +1,22 @@
+/* AJ Investment Research Enhancer — ranking sort */
+.ajx-sortable {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.ajx-sortable:hover {
+  text-decoration: underline;
+}
+.ajx-sortable::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  margin-left: 2px;
+  opacity: 0.7;
+}
+.ajx-sortable.ajx-sorted-asc::after  { content: "▲"; }
+.ajx-sortable.ajx-sorted-desc::after { content: "▼"; }
+.ajx-sortable.ajx-sorted-asc,
+.ajx-sortable.ajx-sorted-desc {
+  font-weight: 700;
+}
